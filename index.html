@@ -4,21 +4,72 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
     
     <section>
-        <h2>Calculadora de combustible</h2>
-        
+        <h2>Calculadora de Combustible Regular</h2>
+
         <div>
-            <label for="combustible">Combustible: </label>
-            <input type="text" name="combustible" id="combustible">
+            <label for="regular">Regular</label>
+
+            <label for="precio">Precio: </label>
+            <input type="number" name="precio" id="precio">
+
+            <label for="cantidad">Cantidad: </label>
+            <input type="number" name="cantidad" id="cantidad">
+            
         </div>
+
+        <button id="boton" type="submit" class="boton" onclick="calcular_regular()">Calcular</button>
+
+        <p id="total_regular">Total: </p>
+    
+
+    </section>
+
+    <section>
+        <h2>Calculadora de Combustible Super</h2>
+
         <div>
-            <label for="c">Nombre: </label>
-            <input type="text" name="nombre" id="nombre">
+            <label for="Super">Super</label>
+
+            <label for="precio">Precio: </label>
+            <input type="number" name="precio" id="precio">
+
+            <label for="cantidad">Cantidad: </label>
+            <input type="number" name="cantidad" id="cantidad">
+            
         </div>
+
+        <button id="boton" type="submit" class="boton" onclick="calcular_super()">Calcular</button>
+
+        <p id="total_super">Total: </p>
+    
     </section>
     
+    <section>
+        <h2>Calculadora de Combustible Diesel</h2>
+
+        <div>
+            <label for="diesel">Diesel</label>
+
+            <label for="precio">Precio: </label>
+            <input type="number" name="precio" id="precio">
+
+            <label for="cantidad">Cantidad: </label>
+            <input type="number" name="cantidad" id="cantidad">
+            
+        </div>
+
+        <button id="boton" type="submit" class="boton" onclick="calcular_diesel()">Calcular</button>
+
+        <p id="total_diesel">Total: </p>
+    
+
+    </section>
+
+    <script src="js.js"></script>
 </body>
 </html>
