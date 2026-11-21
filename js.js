@@ -48,7 +48,7 @@ function calcular_super(){
 
     let total_super = cantidad * precio;
 
-    let exencion = total_regular * 0.90;
+    let exencion = total_super * 0.90;
 
     document.getElementById("total_super").innerHTML = "Total: " + total_super.toFixed(2);
     document.getElementById("exencion_super").innerHTML = "Exencion: " + exencion.toFixed(2);
@@ -64,7 +64,7 @@ function calcular_diesel(){
 
     let total_diesel = cantidad * precio;
 
-    let exencion = total_regular * 0.90;
+    let exencion = total_diesel * 0.90;
 
     document.getElementById("total_diesel").innerHTML = "Total: " + total_diesel.toFixed(2);
     document.getElementById("exencion_diesel").innerHTML = "Exencion: " + exencion.toFixed(2);
